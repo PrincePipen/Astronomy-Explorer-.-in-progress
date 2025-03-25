@@ -1,8 +1,8 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const API_KEY = "AIzaSyCuFMZtp39KdaRU4WjetUlNq3gjFhV5Sf0";
+const API_KEY = "AIzaSyC8d3slcL0wdnXi3yJ7RR8YbcausVQ5NbQ";
 const genAI = new GoogleGenerativeAI(API_KEY);
-const model = genAI.getGenerativeModel({ model: "models/gemini-2.0-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-pro" }); // Updated model name
 
 export async function getAstronomyAnswer(question: string): Promise<string> {
   try {
